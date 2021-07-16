@@ -1,11 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 @media screen and (min-width: 240px) {
   .body {
     margin: 0;
     padding: 0;
+    font-family: "Exo 2", sans-serif;
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 100px, 1fr, 70px;
+        grid-template-rows: 100px, 1fr, 70px;
   }
   /* HEADER */
   .header {
     height: 100px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
     background: linear-gradient(45deg, #10b995, #4c24b9);
     -webkit-box-shadow: 0 3px 6px black;
             box-shadow: 0 3px 6px black;
@@ -31,6 +46,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
   .todo-container {
     min-width: 100%;
@@ -45,7 +66,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 15px;
-    border-bottom: 1px solid black;
     padding-bottom: 15px;
   }
   .options-buttons {
@@ -61,24 +81,47 @@
   }
   .options-buttons__key {
     width: 80px;
+    border: 0;
+    height: 25px;
+    color: white;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
   }
   .options-input {
     height: 30px;
     margin: 0 10px 10px 10px;
   }
   .add {
-    margin-left: 15px;
+    margin-left: 10px;
+    background-color: #10b995;
+  }
+  .add:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .deleteAll {
-    margin-right: 15px;
+    margin-right: 10px;
+    background-color: #4c24b9;
+  }
+  .deleteAll:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .activities-container {
     background-color: #292929;
-    height: 500px;
+    min-height: 25rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-bottom: 1px;
+    padding-top: 1px;
   }
   .todo {
     height: 60px;
-    background-color: #fff;
+    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,6 +147,55 @@
     background-color: #df1212;
     border: 0;
     color: white;
+    -webkit-transition: -webkit-transform;
+    transition: -webkit-transform;
+    transition: transform;
+    transition: transform, -webkit-transform;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+  }
+  .delete:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .footer {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .footer h2 {
+    margin-left: 15px;
+  }
+  .footer-redes {
+    margin-right: 10px;
+  }
+  .footer-redes__img {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .footer-redes__img:active {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 /*# sourceMappingURL=main.css.map */

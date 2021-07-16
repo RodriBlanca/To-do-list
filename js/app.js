@@ -22,8 +22,11 @@ function loadEventListeners() {
 
     deleteAllBtn.addEventListener('click', () => {
         // Elimina todos los to do's
-        todoList = [];
-        cleanHTML();
+        const deleteAll = () => {
+            todoList = [];
+            cleanHTML();
+        }
+        setTimeout(deleteAll, 300);
     });
 
     todosContainer.addEventListener('click', deleteTodo);
@@ -87,20 +90,18 @@ function cleanHTML() {
 function deleteTodo(e) {
     const deleteBtn = e.target.classList.contains('delete');
     const id = e.target.parentElement.getAttribute('data-id');
-
-    if(deleteBtn) {
-        for(let i = 0; i < todoList.length; i++) {
-            if(id == todoList[i].id) {
-                // todoList.splice(i, 1);
-                todoList.splice(i, 1);
-                cleanHTML();
-                todoHTML();
-                // FALTA HACERLO VER POR EL HTML
+    const deleteAction = () => {
+        if(deleteBtn) {
+            for(let i = 0; i < todoList.length; i++) {
+                if(id == todoList[i].id) {
+                    todoList.splice(i, 1);
+                    cleanHTML();
+                    todoHTML();
+                }
             }
         }
     }
-    
-
+    setTimeout(deleteAction, 200);
 }
 
 loadEventListeners();
