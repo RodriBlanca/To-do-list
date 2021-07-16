@@ -1,0 +1,98 @@
+//Import google fonts
+
+@media screen and (min-width: 240px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header {
+    height: 100px;
+    background: linear-gradient(45deg, rgb(16, 185, 149), rgb(76, 36, 185));
+    box-shadow: 0 3px 6px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+      margin: 0;
+      color: white;
+    }
+  }
+
+  /* MAIN */
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .todo-container {
+    min-width: 100%;
+    min-height: 500px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__key {
+        width: 80px;
+      }
+    }
+
+    &-input {
+      height: 30px;
+      margin: 0 10px 10px 10px;
+    }
+  }
+
+  .add {
+    margin-left: 15px;
+  }
+
+  .deleteAll {
+    margin-right: 15px;
+  }
+
+  .activities-container {
+    background-color: rgb(41, 41, 41);
+    height: 500px;
+  }
+
+  // ESTILOS PARA EL ELEMENTO CREADO CON JAVASCRIPT
+  .todo {
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+      margin-left: 15px;
+    }
+
+    &-buttons {
+      margin-right: 15px;
+    }
+  }
+
+  .delete {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    background-color: rgb(223, 18, 18);
+    border: 0;
+    color: white;
+  }
+}

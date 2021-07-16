@@ -1,0 +1,109 @@
+@media screen and (min-width: 240px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  /* HEADER */
+  .header {
+    height: 100px;
+    background: linear-gradient(45deg, #10b995, #4c24b9);
+    -webkit-box-shadow: 0 3px 6px black;
+            box-shadow: 0 3px 6px black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-title {
+    margin: 0;
+    color: white;
+  }
+  /* MAIN */
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .todo-container {
+    min-width: 100%;
+    min-height: 500px;
+  }
+  .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+  }
+  .options-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .options-buttons__key {
+    width: 80px;
+  }
+  .options-input {
+    height: 30px;
+    margin: 0 10px 10px 10px;
+  }
+  .add {
+    margin-left: 15px;
+  }
+  .deleteAll {
+    margin-right: 15px;
+  }
+  .activities-container {
+    background-color: #292929;
+    height: 500px;
+  }
+  .todo {
+    height: 60px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 0;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .todo p {
+    margin-left: 15px;
+  }
+  .todo-buttons {
+    margin-right: 15px;
+  }
+  .delete {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    background-color: #df1212;
+    border: 0;
+    color: white;
+  }
+}
+/*# sourceMappingURL=main.css.map */
