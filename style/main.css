@@ -198,4 +198,38 @@
             transform: scale(0.7);
   }
 }
+
+@media screen and (min-width: 600px) {
+  .body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[9];
+        grid-template-columns: repeat(9, 1fr);
+    background-color: #ebebeb;
+  }
+  .header,
+  .footer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-column: 1/10;
+  }
+  .main {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
+    background-color: white;
+    margin: 25px 0;
+  }
+  .footer {
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    grid-column: 3/8;
+  }
+}
 /*# sourceMappingURL=main.css.map */
